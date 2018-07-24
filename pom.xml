@@ -118,14 +118,31 @@
 			<scope>provided</scope>
 		</dependency>
 		
-		<!-- NON MULE dependencies -->
-		
-		<dependency>
-    		<groupId>org.apache.derby</groupId>
-    		<artifactId>derby</artifactId>
-    		<version>10.14.2.0</version>
-		</dependency>
-		
+        <!-- Non-Mule Dependencies -->
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.14.2.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-client</artifactId>
+            <version>${activemq.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-broker</artifactId>
+            <version>${activemq.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-kahadb-store</artifactId>
+            <version>${activemq.version}</version>
+            <scope>compile</scope>
+        </dependency>		
 		<!-- for testing -->
 		<dependency>
 			<groupId>org.mule.tests</groupId>
